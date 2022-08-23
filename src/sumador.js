@@ -58,4 +58,11 @@ function impuesto(lugar)
     return imp;
 }
 
-export {sumar, multiplicar, descuento, impuesto};
+function calcularPrecioTotal(precioNeto, descuento, impuesto) {
+  let tot = impuesto - descuento;
+  tot = tot + precioNeto;
+  return tot;
+}
+
+
+export {sumar, multiplicar, descuento, impuesto, calcularPrecioTotal};
