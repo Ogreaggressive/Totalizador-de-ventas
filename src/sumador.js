@@ -39,7 +39,11 @@ function impuesto(lugar)
         case 'UT':
             imp = 0.0665;
             break;
+        case 'NV':
+            imp = 0.08;
+            break;
     }
+    
     return imp;
 }
 
