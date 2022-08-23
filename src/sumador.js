@@ -20,6 +20,10 @@ function descuento(tot) {
   {
     des = 0.07;
   }
+  else if (tot >= 10000 && tot < 30000)
+  {
+    des = 0.1;
+  }
   return des;
 }
 
