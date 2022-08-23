@@ -6,4 +6,13 @@ function multiplicar(a, b) {
   return a * b;
 }
 
-export {sumar, multiplicar}
+function descuento(tot) {
+  let des = 0;
+  if (tot >= 1000)
+  {
+    des = 0.03;
+  }
+  return des;
+}
+
+export {sumar, multiplicar, descuento};
