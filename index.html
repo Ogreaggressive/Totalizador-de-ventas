@@ -8,20 +8,22 @@
       <label for="precio">ingrese el precio del item que se quiera comprar:</label>
       <input type="number" id="precio" />
     </br>
-    <p>elija el estado donde se encuentre para calcular el impuesto
-      <SELECT>
+    <label for="lugar">elija el estado donde se encuentre para calcular el impuesto:</label>
+      <select name="lugar" id="lugar">
         <OPTION value="UT">UT</OPTION>
         <OPTION value="NV">NV</OPTION>
         <OPTION value="TX">TX</OPTION>
         <OPTION value="AL">AL</OPTION>
         <OPTION value="CA">CA</OPTION>
-      </SELECT>
-    </p>
+      </select>
+    </br>
     <button id="totalizar">Totalizar</button>
     </form>
     <div id="resultado-div"></div>
 
     <div id="descuento-div"></div>
+
+    <div id="impuesto-div"></div>
 
     <script type="module" src="./src/presenter.js"></script>
   </body>

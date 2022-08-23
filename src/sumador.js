@@ -31,4 +31,16 @@ function descuento(tot) {
   return des;
 }
 
-export {sumar, multiplicar, descuento};
+function impuesto(lugar)
+{
+    let imp = 0;
+    switch(lugar)
+    {
+        case 'UT':
+            imp = 0.0665;
+            break;
+    }
+    return imp;
+}
+
+export {sumar, multiplicar, descuento, impuesto};
