@@ -21,7 +21,7 @@ button1.addEventListener("click", (event) => {
   let porcentajeDescuento = descuento(total);
   let totalDescuento = multiplicar(porcentajeDescuento,total).toFixed(2);
   let imp = impuesto(lugar.value);
-  let totalImpuesto =  multiplicar(imp,total).toFixed(2);
+  let totalImpuesto =  multiplicar(imp,total-totalDescuento).toFixed(2);
   let PrecioTotal = calcularPrecioTotal(total,totalDescuento,totalImpuesto);
 
   precioNeto.innerHTML = "<p>El precio neto es: "+firstNumber+ "*"+ secondNumber +" = "+total+ "</p>";
